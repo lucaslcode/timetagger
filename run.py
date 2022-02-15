@@ -99,7 +99,7 @@ async def webtoken_for_localhost(request):
     """
 
     # Return the webtoken for the default user
-    token = await get_webtoken_unsafe("defaultuser")
+    token = await get_webtoken_unsafe("lucas")
     return 200, {}, dict(token=token)
 
 
